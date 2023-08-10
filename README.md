@@ -86,4 +86,47 @@ The adjacency list is formulated according to the above rules of sudoku. In GCP,
 
 ![Example Graph and its adjacency List](https://github.com/SamarpreetSingh/Sudoku-Solver-with-Graph-Coloring-using-Genetic-Algorithm/assets/56433539/43585dc2-adb3-45c6-8988-efc5c9019904)
 
+## Methodology
+
+### Chromosome Representation
+Each Chromosome is an 81 characters long string encoding the information about every 81 cells of the Sudoku. Each gene represents the color assigned to each cell. The possible value of each gene lies between 1 to 9. The ith gene of Chromosome is represented by C[i].
+
+### Fitness
+**Bad Edge** - A bad edge is defined as an edge connecting two vertices that have the same color.
+
+The fitness of each individual is the number of bad edges in the colored graph that the chromosome represents.
+
+```math
+fitness(C,Adj) = \sum\limits_{i=0}^{80} \sum\limits_{j=0}^{80} [C[i] = C[j] \land Adj[i][j] = 1]
+```
+
+### Parent Selection
+Parent selection is a critical component of genetic algorithms that determines how individuals in a population are selected for mating and reproduction to create new offspring. The goal of parent selection is to identify the fittest individuals that have a higher probability of producing better offspring.
+
+#### Parent Selection 1
+Parent selection 1 is tournament selection. In this method, a small subset of individuals is randomly selected from the population, and the fittest individual is chosen as a parent. This process is repeated until the desired number of parents is selected.
+
+#### Parent Selection 2
+Parent selection 2 selects the best and the second-best individual of the population.
+
+### Crossover
+One-point crossover is used to recombine two parent chromosomes to generate new offspring. It works by selecting a random crossover point along the length of both parents and then swapping the genetic material beyond that point. This creates two new offspring, each with genetic material from both parents.
+
+### Mutation
+The mutation is a genetic operator used in evolutionary algorithms, including genetic algorithms, to introduce genetic diversity in the population of solutions. It is used to prevent premature convergence and to explore the search space. Two Mutation operators have been used in this paper:
+
+#### Mutation 1
+The mutation 1 operator takes a chromosome as input and checks if any vertex in the graph has the same color as its adjacent vertices. If this condition is true, it creates a list of all adjacent colors and a list of all possible colors. It then removes the adjacent colors from the list of all possible colors to create a list of valid colors. Next, it randomly selects a valid color from the list and assigns it to the vertex that failed the color test. The mutation of a node is done with probability 0.2. Finally, it returns the mutated chromosome.
+
+#### Mutation 2
+For each vertex in the chromosome, mutation 2 checks if the vertex has the same color as any of its adjacent vertices. If it does, a new color is randomly chosen from the full set of available colors and assigned to the vertex. The mutation probability of this operator is 0.6. Finally, the mutated chromosome is returned.
+
+### Working Process
+- The population is initialized with individuals of 81 length with each empty position having a random color between 1 to 9.
+- Selection, Crossover, and Mutation are performed for each individual of the population in each generation.
+- The algorithm randomly switches between the 2 defined mutation and parent selection strategies.
+- The fitness is calculated after each generation of the population and the best individual solution is displayed.
+- The algorithm terminates when it had run for the specified number of generations or when it finds an individual with 0 fitness value.
+
+
 
