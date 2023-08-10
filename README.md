@@ -128,5 +128,27 @@ For each vertex in the chromosome, mutation 2 checks if the vertex has the same 
 - The fitness is calculated after each generation of the population and the best individual solution is displayed.
 - The algorithm terminates when it had run for the specified number of generations or when it finds an individual with 0 fitness value.
 
+## Results
+
+The result, as in Fig 4, is obtained for the input as shown in Fig 3. This problem was solved in 3008 generations and the population size was 500.\\
+The Fig 6 shows the best-fitness vs number of generation graph for the given problem.
+
+![input](https://github.com/SamarpreetSingh/Sudoku-Solver-with-Graph-Coloring-using-Genetic-Algorithm/assets/56433539/fdcfa5fc-e410-43ef-937e-2068e6516112 "Input")
+
+![Output](https://github.com/SamarpreetSingh/Sudoku-Solver-with-Graph-Coloring-using-Genetic-Algorithm/assets/56433539/ae138f17-082f-4f16-809f-0e8204d4f137)
+![best-fitness vs generations](https://github.com/SamarpreetSingh/Sudoku-Solver-with-Graph-Coloring-using-Genetic-Algorithm/assets/56433539/0fc2c534-0278-44c1-a3c8-7fd079b24990)
+
+## Conclusion
+
+In conclusion, this research paper presents an approach for solving Sudoku puzzles using a combination of graph theory and genetic algorithms. The proposed algorithm represents Sudoku puzzles as graphs and employs graph coloring to solve them. The genetic algorithm is used to optimize the graph coloring solution and utilizes multiple parent selection and mutation methods on a randomized basis to reach the global optimum quickly. The results demonstrate that the proposed algorithm successfully solved a sample Sudoku puzzle. This approach has the potential to be extended to other optimization problems that can be represented as graphs. Overall, this research contributes to the field of optimization and puzzle-solving by offering a new technique that combines graph theory and genetic algorithms.
+
+## References
+
+## References
+
+1. Hindi, Musa & Yampolskiy, Roman. "Genetic Algorithm Applied to the Graph Coloring Problem." Midwest Artificial Intelligence and Cognitive.
+2. Díaz, Isabel Méndez, and Zabala, Paula. "A Generalization of the Graph Coloring Problem." Departamento de Computacion, Universidad de Buenos Aires.
+3. Chatterjee, Sankhadeep & Paladhi, Saubhik & Chakraborty, Raktim. "A Comparative Study On The Performance Characteristics Of Sudoku Solving Algorithms." IOSR Journal of Computer Engineering.
+4. Deb, K. "An introduction to genetic algorithms." Sadhana, 24, 293-315.
 
 
