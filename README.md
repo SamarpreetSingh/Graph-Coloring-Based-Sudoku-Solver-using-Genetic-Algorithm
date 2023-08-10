@@ -144,8 +144,6 @@ In conclusion, this research paper presents an approach for solving Sudoku puzzl
 
 ## References
 
-## References
-
 1. Hindi, Musa & Yampolskiy, Roman. "Genetic Algorithm Applied to the Graph Coloring Problem." Midwest Artificial Intelligence and Cognitive.
 2. Díaz, Isabel Méndez, and Zabala, Paula. "A Generalization of the Graph Coloring Problem." Departamento de Computacion, Universidad de Buenos Aires.
 3. Chatterjee, Sankhadeep & Paladhi, Saubhik & Chakraborty, Raktim. "A Comparative Study On The Performance Characteristics Of Sudoku Solving Algorithms." IOSR Journal of Computer Engineering.
