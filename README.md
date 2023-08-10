@@ -1,4 +1,4 @@
-# Sudoku Solver with Genetic Algorithm and Graph Coloring
+# Graph Coloring Based Sudoku Solver using Genetic Algorithm
 
 This repository presents an approach to solving Sudoku puzzles using genetic algorithm and graph coloring. The proposed algorithm represents Sudoku puzzles as graphs and employs graph coloring to solve them. The genetic algorithm is used to find the optimal graph coloring solution. The genetic algorithm described here utilizes more than one parent selection and mutation methods on a randomized basis. This results in shifting the solution to the global optimum more quickly than using a single-parent selection or mutation method. The proposed algorithm succeeded at solving the sample Sudoku successfully.
 
